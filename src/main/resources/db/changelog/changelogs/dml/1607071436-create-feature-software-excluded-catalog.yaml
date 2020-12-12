@@ -1,0 +1,248 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1607071436-create-feature-software-excluded-catalog
+      author: williamcustodio
+      changes:
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureA')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'ykzkfK')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureA')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = '87Zhwo')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureA')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'y4XKWo')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureA')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'ay0pW2')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureA')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = '44OmDi')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureA')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'aJsd3i')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureA')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'Qoflqf')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureA')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = '2EzZXE')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureA')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'j3mmf8')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureA')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'MUR8Lx')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureA')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'E6GYk7')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureA')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'rDJyQX')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureB')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'yfepdF')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureB')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'Q54BVi')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureB')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = '1QNx4P')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureB')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'u9XCsm')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureB')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'RgrAEU')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureB')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = '0M97HZ')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureB')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'BD80qR')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureB')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'RGOkrt')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureB')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'y4XKWo')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureB')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'LV7Msr')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureB')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = '0OEvxe')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureB')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'VLyf6R')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureB')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 's1I5dm')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureB')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'I4wRf9')
+            tableName:  feature_software_excluded
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureC')
+              - column:
+                  name:  software_id
+                  valueComputed: (select id from software where code = 'T2WuvF')
+            tableName:  feature_software_excluded

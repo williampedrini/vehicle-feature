@@ -1,0 +1,50 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1607070140-create-feature-hardware-excluded
+      author: williamcustodio
+      changes:
+        - createTable:
+            tableName: feature_hardware_excluded
+            remarks: "Table containing a catalog with all existing excluded hardwares for a feature."
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  remarks: "Relation unique identifier."
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: feature_id
+                  type: int
+                  remarks: "Feature's unique identifier."
+                  constraints:
+                    nullable: false
+              - column:
+                  name: hardware_id
+                  type: int
+                  remarks: "Hardware's unique identifier."
+                  constraints:
+                    nullable: false
+        - addForeignKeyConstraint:
+            baseColumnNames: feature_id
+            baseTableName: feature_hardware_excluded
+            constraintName: feature_feature_hardware_excluded_fk
+            onDelete: CASCADE
+            referencedColumnNames: id
+            referencedTableName: feature
+            validate: true
+        - addForeignKeyConstraint:
+            baseColumnNames: hardware_id
+            baseTableName: feature_hardware_excluded
+            constraintName: hardware_feature_hardware_excluded_fk
+            onDelete: CASCADE
+            referencedColumnNames: id
+            referencedTableName: hardware
+            validate: true
+        - addUniqueConstraint:
+            columnNames:  feature_id, hardware_id
+            constraintName:  feature_hardware_excluded_uk
+            tableName:  feature_hardware_excluded
+            validate:  true

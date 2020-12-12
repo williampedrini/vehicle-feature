@@ -1,0 +1,131 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1607071436-create-feature-hardware-included-catalog
+      author: williamcustodio
+      changes:
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureA')
+              - column:
+                  name:  hardware_id
+                  valueComputed: (select id from hardware where code = 'rlTcbX')
+            tableName:  feature_hardware_included
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureA')
+              - column:
+                  name:  hardware_id
+                  valueComputed: (select id from hardware where code = 'wEEA00')
+            tableName:  feature_hardware_included
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureA')
+              - column:
+                  name:  hardware_id
+                  valueComputed: (select id from hardware where code = 'SoF5uL')
+            tableName:  feature_hardware_included
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureA')
+              - column:
+                  name:  hardware_id
+                  valueComputed: (select id from hardware where code = 'VhB9VY')
+            tableName:  feature_hardware_included
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureA')
+              - column:
+                  name:  hardware_id
+                  valueComputed: (select id from hardware where code = 'NWytcy')
+            tableName:  feature_hardware_included
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureB')
+              - column:
+                  name:  hardware_id
+                  valueComputed: (select id from hardware where code = 'fMm4Hl')
+            tableName:  feature_hardware_included
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureB')
+              - column:
+                  name:  hardware_id
+                  valueComputed: (select id from hardware where code = 'PWO7oa')
+            tableName:  feature_hardware_included
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureB')
+              - column:
+                  name:  hardware_id
+                  valueComputed: (select id from hardware where code = 'F73iHn')
+            tableName:  feature_hardware_included
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureC')
+              - column:
+                  name:  hardware_id
+                  valueComputed: (select id from hardware where code = 'wv2CZs')
+            tableName:  feature_hardware_included
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureC')
+              - column:
+                  name:  hardware_id
+                  valueComputed: (select id from hardware where code = 'CEuBzO')
+            tableName:  feature_hardware_included
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureC')
+              - column:
+                  name:  hardware_id
+                  valueComputed: (select id from hardware where code = 'Cu5fGc')
+            tableName:  feature_hardware_included
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureC')
+              - column:
+                  name:  hardware_id
+                  valueComputed: (select id from hardware where code = 'jvqI5i')
+            tableName:  feature_hardware_included
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureC')
+              - column:
+                  name:  hardware_id
+                  valueComputed: (select id from hardware where code = 'pZLSFn')
+            tableName:  feature_hardware_included
+        - insert:
+            columns:
+              - column:
+                  name:  feature_id
+                  valueComputed: (select id from feature where name = 'FeatureC')
+              - column:
+                  name:  hardware_id
+                  valueComputed: (select id from hardware where code = 'eUMxfa')
+            tableName:  feature_hardware_included

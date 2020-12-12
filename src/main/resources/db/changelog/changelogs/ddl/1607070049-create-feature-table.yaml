@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1607070049-create-feature-table
+      author: williamcustodio
+      changes:
+        - createTable:
+            tableName: feature
+            remarks: "Table containing a catalog with all existing features."
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  remarks: "Feature's unique identifier."
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: varchar(255)
+                  remarks: "Feature's unique name."
+                  constraints:
+                    nullable: false
+                    unique: true

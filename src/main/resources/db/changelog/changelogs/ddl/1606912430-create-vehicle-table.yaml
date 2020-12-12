@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1606912430-create-vehicle-table
+      author: williamcustodio
+      changes:
+        - createTable:
+            tableName: vehicle
+            remarks: "Table containing a catalog with all existing vehicles."
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  remarks: "Vehicle's unique identifier."
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: vin
+                  type: varchar(17)
+                  remarks: "Vehicle's unique VIN."
+                  constraints:
+                    nullable: false
+                    unique: true

@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1606912430-create-hardware-table
+      author: williamcustodio
+      changes:
+        - createTable:
+            tableName: hardware
+            remarks: "Table containing a catalog with all existing hardwares."
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  remarks: "Hardware's unique identifier."
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: code
+                  type: varchar(255)
+                  remarks: "Hardware's code."
+                  constraints:
+                    nullable: false
+                    unique: true

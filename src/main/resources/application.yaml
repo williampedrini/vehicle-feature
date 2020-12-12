@@ -1,0 +1,23 @@
+application:
+    integration:
+        directory:
+            input: ${FILE_PROCESSING_INPUT_DIR}
+            output: ${FILE_PROCESSING_OUTPUT_DIR}
+            error: ${FILE_PROCESSING_ERROR_DIR}
+        hardware-file-pattern: (hardware_)(\d+).csv
+        poller-delay: 5000
+        software-file-pattern: (software_)(\d+).csv
+    vin-pattern: ^[A-HJ-NPR-Za-hj-npr-z\d]{8}[\dX][A-HJ-NPR-Za-hj-npr-z\d]{2}\d{6}$
+server:
+    servlet:
+        context-path: /fota
+spring:
+  datasource:
+    url: ${DATA_SOURCE_URL}
+    platform: mysql
+    username: ${DATA_SOURCE_USERNAME}
+    password: ${DATA_SOURCE_PASSWORD}
+    driverClassName: com.mysql.cj.jdbc.Driver
+  integration:
+    resolutionRequired: false
+    ignoreSendFailures: true

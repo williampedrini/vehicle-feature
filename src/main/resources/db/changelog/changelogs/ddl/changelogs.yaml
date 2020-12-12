@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changelogs/ddl/1606912430-create-hardware-table.yaml
+  - include:
+      file: db/changelog/changelogs/ddl/1606912430-create-software-table.yaml
+  - include:
+      file: db/changelog/changelogs/ddl/1606912430-create-vehicle-table.yaml
+  - include:
+      file: db/changelog/changelogs/ddl/1606912911-create-vehicle-hardware-table.yaml
+  - include:
+      file: db/changelog/changelogs/ddl/1606912911-create-vehicle-software-table.yaml
+  - include:
+      file: db/changelog/changelogs/ddl/1607070049-create-feature-table.yaml
+  - include:
+      file: db/changelog/changelogs/ddl/1607070140-create-feature-hardware-excluded.yaml
+  - include:
+      file: db/changelog/changelogs/ddl/1607070140-create-feature-hardware-included.yaml
+  - include:
+      file: db/changelog/changelogs/ddl/1607070140-create-feature-software-excluded.yaml
+  - include:
+      file: db/changelog/changelogs/ddl/1607070140-create-feature-software-included.yaml
+
+
+
+
+
+
+
+
+
+
+
+
+
+

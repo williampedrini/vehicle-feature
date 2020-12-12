@@ -1,0 +1,215 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1607071435-create-hardware-catalog
+      author: williamcustodio
+      changes:
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: rlTcbX
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: wEEA00
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: SoF5uL
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: VhB9VY
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: NWytcy
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: yZDXJJ
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: tMI8bI
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: DS8tZU
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: PgOtkv
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: PuyTwj
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: ObZw28
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: ZCLFOe
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: jyP5PK
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: pS5ZQs
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: rcjjPX
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: 6VO6Uq
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: DAlCk4
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: YxKjcX
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: fMm4Hl
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: PWO7oa
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: F73iHn
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: mrGqkV
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: Ps19N7
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: wv2CZs
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: CEuBzO
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: Cu5fGc
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: jvqI5i
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: pZLSFn
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: eUMxfa
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: JY3Vcn
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: 8PielJ
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: NcOLyY
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: Zfahrb
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: iKALCh
+            tableName:  hardware
+        - insert:
+            columns:
+              - column:
+                  name:  code
+                  value: 6IHTbr
+            tableName:  hardware

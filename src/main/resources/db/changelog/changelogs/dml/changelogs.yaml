@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changelogs/dml/1607071435-create-hardware-catalog.yaml
+  - include:
+      file: db/changelog/changelogs/dml/1607071435-create-software-catalog.yaml
+  - include:
+      file: db/changelog/changelogs/dml/1607071436-create-feature-catalog.yaml
+  - include:
+      file: db/changelog/changelogs/dml/1607071436-create-feature-hardware-excluded-catalog.yaml
+  - include:
+      file: db/changelog/changelogs/dml/1607071436-create-feature-hardware-included-catalog.yaml
+  - include:
+      file: db/changelog/changelogs/dml/1607071436-create-feature-software-excluded-catalog.yaml
+  - include:
+      file: db/changelog/changelogs/dml/1607071436-create-feature-software-included-catalog.yaml
+
+
+
+
+
+
+
+
+
+
+

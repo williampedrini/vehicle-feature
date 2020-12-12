@@ -1,0 +1,39 @@
+version: '3.6'
+services:
+  application:
+      image: docker.io/library/vehicle-feature:1.0.0-SNAPSHOT
+      container_name: vehicle-feature-api
+      environment:
+        - DATA_SOURCE_URL=jdbc:mysql://database:3306/vehicle-feature
+        - DATA_SOURCE_USERNAME=vehicle-feature
+        - DATA_SOURCE_PASSWORD=vehicle-feature
+        - SPRING_PROFILES_ACTIVE=vehicle-data-flow
+        - FILE_PROCESSING_INPUT_DIR=/data/<input_directory_name>
+        - FILE_PROCESSING_OUTPUT_DIR=/data/<output_directory_name>
+        - FILE_PROCESSING_ERROR_DIR=/data/<error_directory_name>
+      ports:
+        - "8080:8080"
+      depends_on:
+        database:
+          condition: service_healthy
+      volumes:
+            - vehicle-information:/data
+  database:
+    image: mysql:8
+    container_name: vehicle-feature-database
+    environment:
+      MYSQL_USER: vehicle-feature
+      MYSQL_PASSWORD: vehicle-feature
+      MYSQL_ROOT_PASSWORD: vehicle-feature
+      MYSQL_DATABASE: vehicle-feature
+    ports:
+      - "3306:3306"
+    healthcheck:
+          test: mysqladmin ping -h 127.0.0.1 -u $$MYSQL_USER --password=$$MYSQL_PASSWORD
+volumes:
+  vehicle-information:
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: <input_host_directory>

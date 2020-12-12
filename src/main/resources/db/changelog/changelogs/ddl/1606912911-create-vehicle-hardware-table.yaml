@@ -1,0 +1,50 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1606912911-create-vehicle-hardware-table
+      author: williamcustodio
+      changes:
+        - createTable:
+            tableName: vehicle_hardware
+            remarks: "Table containing a catalog with all existing relation between a vehicle and hardware."
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  remarks: "Relation unique identifier."
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: vehicle_id
+                  type: int
+                  remarks: "Vehicle's unique identifier."
+                  constraints:
+                    nullable: false
+              - column:
+                  name: hardware_id
+                  type: int
+                  remarks: "Hardware's unique identifier."
+                  constraints:
+                    nullable: false
+        - addForeignKeyConstraint:
+            baseColumnNames: vehicle_id
+            baseTableName: vehicle_hardware
+            constraintName: vehicle_vehicle_hardware_fk
+            onDelete: CASCADE
+            referencedColumnNames: id
+            referencedTableName: vehicle
+            validate: true
+        - addForeignKeyConstraint:
+            baseColumnNames: hardware_id
+            baseTableName: vehicle_hardware
+            constraintName: hardware_vehicle_hardware_fk
+            onDelete: CASCADE
+            referencedColumnNames: id
+            referencedTableName: hardware
+            validate: true
+        - addUniqueConstraint:
+            columnNames:  vehicle_id, hardware_id
+            constraintName:  vehicle_hardware_uk
+            tableName:  vehicle_hardware
+            validate:  true

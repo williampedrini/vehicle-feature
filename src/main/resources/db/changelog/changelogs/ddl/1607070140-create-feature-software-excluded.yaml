@@ -1,0 +1,50 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1607070140-create-feature-software-excluded
+      author: williamcustodio
+      changes:
+        - createTable:
+            tableName: feature_software_excluded
+            remarks: "Table containing a catalog with all existing excluded softwares for a feature."
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  remarks: "Relation unique identifier."
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: feature_id
+                  type: int
+                  remarks: "Feature's unique identifier."
+                  constraints:
+                    nullable: false
+              - column:
+                  name: software_id
+                  type: int
+                  remarks: "Software's unique identifier."
+                  constraints:
+                    nullable: false
+        - addForeignKeyConstraint:
+            baseColumnNames: feature_id
+            baseTableName: feature_software_excluded
+            constraintName: feature_feature_software_excluded_fk
+            onDelete: CASCADE
+            referencedColumnNames: id
+            referencedTableName: feature
+            validate: true
+        - addForeignKeyConstraint:
+            baseColumnNames: software_id
+            baseTableName: feature_software_excluded
+            constraintName: software_feature_software_excluded_fk
+            onDelete: CASCADE
+            referencedColumnNames: id
+            referencedTableName: software
+            validate: true
+        - addUniqueConstraint:
+            columnNames:  feature_id, software_id
+            constraintName:  feature_software_excluded_uk
+            tableName:  feature_software_excluded
+            validate:  true

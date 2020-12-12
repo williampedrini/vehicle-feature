@@ -1,0 +1,50 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1607070140-create-feature-software-included
+      author: williamcustodio
+      changes:
+        - createTable:
+            tableName: feature_software_included
+            remarks: "Table containing a catalog with all existing included softwares for a feature."
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  remarks: "Relation unique identifier."
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: feature_id
+                  type: int
+                  remarks: "Feature's unique identifier."
+                  constraints:
+                    nullable: false
+              - column:
+                  name: software_id
+                  type: int
+                  remarks: "Software's unique identifier."
+                  constraints:
+                    nullable: false
+        - addForeignKeyConstraint:
+            baseColumnNames: feature_id
+            baseTableName: feature_software_included
+            constraintName: feature_feature_software_included_fk
+            onDelete: CASCADE
+            referencedColumnNames: id
+            referencedTableName: feature
+            validate: true
+        - addForeignKeyConstraint:
+            baseColumnNames: software_id
+            baseTableName: feature_software_included
+            constraintName: software_feature_software_included_fk
+            onDelete: CASCADE
+            referencedColumnNames: id
+            referencedTableName: software
+            validate: true
+        - addUniqueConstraint:
+            columnNames:  feature_id, software_id
+            constraintName:  feature_software_included_uk
+            tableName:  feature_software_included
+            validate:  true

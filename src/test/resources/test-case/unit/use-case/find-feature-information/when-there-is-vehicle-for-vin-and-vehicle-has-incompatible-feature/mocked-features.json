@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "name": "FeatureA",
+    "includedHardwares": [
+        {
+            "id": "1",
+            "code": "yZDXJJ"
+        }
+    ],
+    "excludedHardwares": [
+        {
+            "id": "2",
+            "code": "rlTcbX"
+        }
+    ],
+    "includedSoftwares": [
+        {
+            "id": "1",
+            "code": "93ZSw9"
+        }
+    ],
+    "excludedSoftwares": [
+        {
+            "id": "2",
+            "code": "GdS6TI"
+        }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "FeatureB",
+    "includedHardwares": [
+      {
+        "id": "1",
+        "code": "fMm4Hl"
+      }
+    ],
+    "excludedHardwares": [
+      {
+        "id": "2",
+        "code": "mrGqkV"
+      }
+    ],
+    "includedSoftwares": [
+      {
+        "id": "1",
+        "code": "FhFXVE"
+      }
+    ],
+    "excludedSoftwares": [
+      {
+        "id": "2",
+        "code": "yfepdF"
+      }
+    ]
+  }
+]

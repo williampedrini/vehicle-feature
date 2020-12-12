@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1607071436-create-feature-catalog
+      author: williamcustodio
+      changes:
+        - insert:
+            columns:
+              - column:
+                  name:  name
+                  value:  FeatureA
+            tableName:  feature
+        - insert:
+            columns:
+              - column:
+                  name:  name
+                  value:  FeatureB
+            tableName:  feature
+        - insert:
+            columns:
+              - column:
+                  name:  name
+                  value:  FeatureC
+            tableName:  feature

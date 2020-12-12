@@ -1,0 +1,50 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1606912911-create-vehicle-software-table
+      author: williamcustodio
+      changes:
+        - createTable:
+            tableName: vehicle_software
+            remarks: "Table containing a catalog with all existing relation between a vehicle and software."
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  remarks: "Relation unique identifier."
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: vehicle_id
+                  type: int
+                  remarks: "Vehicle's unique identifier."
+                  constraints:
+                    nullable: false
+              - column:
+                  name: software_id
+                  type: int
+                  remarks: "Hardware's unique identifier."
+                  constraints:
+                    nullable: false
+        - addForeignKeyConstraint:
+            baseColumnNames: vehicle_id
+            baseTableName: vehicle_software
+            constraintName: vehicle_vehicle_software_fk
+            onDelete: CASCADE
+            referencedColumnNames: id
+            referencedTableName: vehicle
+            validate: true
+        - addForeignKeyConstraint:
+            baseColumnNames: software_id
+            baseTableName: vehicle_software
+            constraintName: software_vehicle_software_fk
+            onDelete: CASCADE
+            referencedColumnNames: id
+            referencedTableName: software
+            validate: true
+        - addUniqueConstraint:
+            columnNames:  vehicle_id, software_id
+            constraintName:  vehicle_software_uk
+            tableName:  vehicle_software
+            validate:  true

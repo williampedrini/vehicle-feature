@@ -1,0 +1,16 @@
+{
+  "id": "1",
+  "vin": "3C3CFFER4ET929645",
+  "hardwares": [
+    {
+      "id": "1",
+      "code": "yZDXJJ"
+    }
+  ],
+  "softwares": [
+    {
+      "id": "1",
+      "code": "93ZSw9"
+    }
+  ]
+}
